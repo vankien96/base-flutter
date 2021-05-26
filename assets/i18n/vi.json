@@ -1,0 +1,16 @@
+{
+    "home": {
+        "hello": "Xin chào thế giới",
+        "changeLanguage": "Đổi ngôn ngữ"
+    },
+    "login": {
+        "title": "Đăng nhập",
+        "username": "Tên tài khoản",
+        "password": "Mật khẩu"
+    },
+    "error": {
+        "noInternet": "Không có kết nối internet. Vui lòng kiểm tra và thử lại.",
+        "internalError": "Đã có lỗi xảy ra. Vui lòng thử lại sau.",
+        "timeout": "Hết thời gian chờ kết nối. Vui lòng kiểm tra mạng và thử lại."
+    }
+}

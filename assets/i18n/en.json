@@ -1,0 +1,16 @@
+{
+    "home": {
+        "hello": "Hello world",
+        "changeLanguage": "Change language"
+    },
+    "login": {
+        "title": "Login",
+        "username": "Username",
+        "password": "Password"
+    },
+    "error": {
+        "noInternet": "No internet connection. Please check device and try again.",
+        "internalError": "Unexpected error occurs. Please try again later.",
+        "timeout": "Connection timeout. Please check your internet and try again."
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "environment": "dev",
+    "base_url": "base.com/api",
+    "version": "/v1",
+    "client_id": "",
+    "client_secret": ""
+}

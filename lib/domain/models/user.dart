@@ -1,5 +1,5 @@
 import 'package:base/commons/enums/gender.dart';
-import 'package:base/data/models/token.dart';
+import 'package:base/domain/models/token.dart';
 import 'package:hive/hive.dart';
 
 part 'user.g.dart';

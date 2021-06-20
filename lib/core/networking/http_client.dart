@@ -10,7 +10,7 @@ import 'package:base/core/api/endpoint.dart';
 import 'package:base/core/error/base_error.dart';
 import 'package:base/core/error/network_error.dart';
 import 'package:base/core/networking/http_method.dart';
-import 'package:base/data/models/response/api_response.dart';
+import 'package:base/domain/models/response/api_response.dart';
 
 class DioClient {
   late Dio dio;

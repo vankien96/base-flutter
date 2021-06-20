@@ -1,6 +1,6 @@
 import 'package:base/commons/const/hive_key.dart';
 import 'package:base/data/local/app_local_store.dart';
-import 'package:base/data/models/user.dart';
+import 'package:base/domain/models/user.dart';
 
 class UserManager {
   AppLocalStore localStore;

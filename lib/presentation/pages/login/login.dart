@@ -1,7 +1,7 @@
 import 'package:base/application/dependency_injection.dart';
 import 'package:base/commons/const/strings.dart';
 import 'package:base/commons/utils/common_function.dart';
-import 'package:base/data/models/manager/setting_manager.dart';
+import 'package:base/domain/models/manager/setting_manager.dart';
 import 'package:base/presentation/pages/login/login_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

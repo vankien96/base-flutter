@@ -1,4 +1,4 @@
-import 'package:base/data/models/user.dart';
+import 'package:base/domain/models/user.dart';
 import 'package:base/domain/repositories/user_repository.dart';
 import 'package:base/domain/usecases/authentication_usecase.dart';
 

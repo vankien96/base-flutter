@@ -2,7 +2,7 @@ import 'package:base/application/dependency_injection.dart';
 import 'package:base/application/route_generator.dart';
 import 'package:base/commons/const/strings.dart';
 import 'package:base/commons/utils/common_function.dart';
-import 'package:base/data/models/manager/setting_manager.dart';
+import 'package:base/domain/models/manager/setting_manager.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {

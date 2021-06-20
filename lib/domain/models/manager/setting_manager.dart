@@ -1,7 +1,7 @@
 import 'package:base/commons/const/hive_key.dart';
 import 'package:base/commons/enums/language.dart';
 import 'package:base/data/local/app_local_store.dart';
-import 'package:base/data/models/setting.dart';
+import 'package:base/domain/models/setting.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_i18n/flutter_i18n.dart';
 

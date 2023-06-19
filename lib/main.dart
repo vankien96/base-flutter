@@ -1,12 +1,9 @@
 import 'package:base/application/app_config.dart';
 import 'package:base/application/route_generator.dart';
-import 'package:base/commons/enums/gender.dart';
 import 'package:base/commons/utils/connectivity_util.dart';
 import 'package:base/core/api/api_config.dart';
 import 'package:base/domain/models/manager/setting_manager.dart';
 import 'package:base/domain/models/setting.dart';
-import 'package:base/domain/models/token.dart';
-import 'package:base/domain/models/user.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_i18n/flutter_i18n.dart';
 import 'package:global_configuration/global_configuration.dart';
@@ -65,11 +62,6 @@ class MyApp extends StatelessWidget {
 Future<void> initHive() async {
   var dir = await getApplicationDocumentsDirectory();
   Hive.init(dir.path);
-
-  Hive.registerAdapter(UserAdapter());
-  Hive.registerAdapter(GenderAdapter());
-  Hive.registerAdapter(TokenAdapter());
-
   await di.getIt<AppLocalStore>().init();
 }
 

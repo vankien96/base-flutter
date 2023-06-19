@@ -16,7 +16,7 @@ class DioClient {
   late Dio dio;
 
   DioClient() {
-    var option = BaseOptions(connectTimeout: 30000);
+    var option = BaseOptions(connectTimeout: Duration(seconds: 30));
     dio = Dio(option);
   }
 
@@ -51,7 +51,7 @@ class DioClient {
       }
       final responseJson = _parseResponse(response);
       return APIResponse(data: responseJson);
-    } on DioError catch (error) {
+    } on DioException catch (error) {
       final parsedError = _parseError(error);
       return APIResponse(error: parsedError);
     } catch (error) {
@@ -65,18 +65,20 @@ class DioClient {
     return responseJson;
   }
 
-  BaseError _parseError(DioError error) {
+  BaseError _parseError(DioException error) {
     switch (error.type) {
-      case DioErrorType.response:
+      case DioExceptionType.unknown:
         return _handleServerResponseError(error);
-      case DioErrorType.connectTimeout:
+      case DioExceptionType.connectionTimeout ||
+            DioExceptionType.sendTimeout ||
+            DioExceptionType.receiveTimeout:
         return NetWorkError(500, translate(Strings.error.timeout));
       default:
         return BaseError(500, translate(Strings.error.internalError));
     }
   }
 
-  BaseError _handleServerResponseError(DioError error) {
+  BaseError _handleServerResponseError(DioException error) {
     final statusCode = error.response?.statusCode ?? 500;
     switch (statusCode) {
       case 401:

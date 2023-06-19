@@ -6,7 +6,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: '>=3.0.5 <4.0.0'
 module:
   androidX: true
 
@@ -15,18 +15,17 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  cupertino_icons: ^1.0.2
-  get_it: ^6.0.0
-  flutter_bloc: ^7.0.0
-  flutter_i18n: ^0.22.3
-  hive: ^2.0.4
-  flutter_secure_storage: ^4.1.0
-  path_provider: ^2.0.0
-  equatable: ^2.0.0
-  local_auth: ^1.1.0
-  global_configuration: ^2.0.0-nullsafety.0
-  dio: ^4.0.0-prev3
-  connectivity: ^3.0.3
+  cupertino_icons:
+  get_it:
+  flutter_bloc:
+  flutter_i18n:
+  hive:
+  flutter_secure_storage:
+  path_provider:
+  equatable:
+  global_configuration: 
+  dio:
+  connectivity_plus:
 
 dev_dependencies:
   flutter_test:

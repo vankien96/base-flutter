@@ -14,8 +14,8 @@
 
 # Tech stack
 
-### Flutter 2.0. Channel stable, 2.0.3
-### Dart version 2.12.2
+### Flutter 3.10.5. Channel stable
+### Dart version 3.0.5
 
 
 ### State Management: BLoC
